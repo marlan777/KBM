@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CRUDKamusM2I">
+
+    <TextView
+        android:id="@+id/txtHeaderKata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/r_txtLbl_Kata"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtKata"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHeaderArti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/r_txtLbl_Arti"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtArti"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHeaderContoh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/r_txtLbl_Contoh"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtContoh"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHeaderCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/r_txtLbl_Credit"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCredit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHeaderLink1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/r_txtLbl_Link1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtLink1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHeaderLink2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/r_txtLbl_Link2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtLink2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtKata"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="0"
+        android:hint="@string/r_txtHint_Kata"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCari"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtArti"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="0"
+        android:hint="@string/r_txtHint_Arti"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtKata" />
+
+    <EditText
+        android:id="@+id/txtContoh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="0"
+        android:hint="@string/r_txtHint_Contoh"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtArti" />
+
+    <EditText
+        android:id="@+id/txtCredit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="0"
+        android:hint="@string/r_txtHint_Contoh"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContoh" />
+
+    <EditText
+        android:id="@+id/txtLink1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="0"
+        android:hint="@string/r_txtHint_Link1"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCredit" />
+
+    <EditText
+        android:id="@+id/txtLink2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="0"
+        android:hint="@string/r_txtHint_Link2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLink1" />
+
+    <Button
+        android:id="@+id/btnCari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="CARI"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtKata"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/r_txtBtn_Create"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLink2" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/r_txtBtn_Update"
+        app:layout_constraintStart_toEndOf="@+id/btnCreate"
+        app:layout_constraintTop_toTopOf="@+id/btnCreate" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/r_txtBtn_Save"
+        app:layout_constraintStart_toStartOf="@+id/btnCreate"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreate" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@android:string/cancel"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSave"
+        app:layout_constraintStart_toEndOf="@+id/btnSave" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/r_txtBtn_Delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnUpdate"
+        app:layout_constraintTop_toTopOf="@+id/btnUpdate" />
+
+    <Button
+        android:id="@+id/btnYES"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/r_txtBtn_Yes"
+        app:layout_constraintStart_toStartOf="@+id/btnDelete"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelete" />
+
+
+    <Button
+        android:id="@+id/btnNO"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/r_txtBtn_No"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnYES"
+        app:layout_constraintEnd_toEndOf="@+id/btnDelete"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toEndOf="@+id/btnYES" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdlBottom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_end="64dp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/r_txtBtn_Kembali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gdlBottom2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

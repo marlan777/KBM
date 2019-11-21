@@ -1,0 +1,92 @@
+<resources>
+    // Resource for App-Name
+    <string name="app_name">Kamus Bahasa Manado</string>
+
+    // Resurce for Botton in Main Layout
+    <string name="r_txtBtn_KamusM2I">Kamus Manado-Indonesia</string>
+    <string name="r_txtBtn_UsulKata">USULKAN KATA BARU</string>
+    <string name="r_txtButton_Kontributor">KONTRIBUTOR</string>
+    <string name="r_txtButton_TentangKamusIni">TENTANG KAMUS INI</string>
+    <string name="r_txtBtn_Keluar">KELUAR/SELESAI</string>
+    <string name="r_txtBtn_CRUDKamusM2I">CRUD Kamus Manado</string>
+
+    // Resource for BACK Button
+    <string name="r_txtBtn_Kembali">KEMBALI KE MENU SEBELUMNYA</string>
+
+    // Resource for Button in KamusM2I Layout
+    <string name="r_txtHeader_CariKata">CARI KATA</string>
+    <string name="r_txtHint_InputKataCari">Masukkan Kata Yang Dicari</string>
+    <string name="r_txtBtn_CariPersis">CARI PERSIS</string>
+    <string name="r_txtBtn_CariAwalan">CARI AWALAN</string>
+    <string name="r_txtBtn_CariMirip">CARI MIRIP</string>
+    <string name="r_txtBtn_TampilkanSemua">TAMPILKAN SEMUA</string>
+
+    // Resource for Button in CRUD Layout
+    <string name="r_txtBtn_Create">CREATE</string>
+    <string name="r_txtBtn_Update">UPDATE</string>
+    <string name="r_txtBtn_Save">SAVE</string>
+    <string name="r_txtBtn_Cancel">CANCEL</string>
+    <string name="r_txtBtn_Delete">DELETE</string>
+    <string name="r_txtBtn_Yes">YES</string>
+    <string name="r_txtBtn_No">NO</string>
+    // Resource for Hint in CRUD Layout
+    <string name="r_txtHint_Kata">Kata Bahasa Manado</string>
+    <string name="r_txtHint_Arti">Arti Kata Bahasa Manado</string>
+    <string name="r_txtHint_Contoh">Contoh Pemakaian Kata</string>
+    <string name="r_txtHint_Credit">Contoh Pemakaian Kata</string>
+    <string name="r_txtHint_Link1">Link1</string>
+    <string name="r_txtHint_Link2">Link2</string>
+    // Resource for Field Label in CRUD Layout
+    <string name="r_txtLbl_Kata">KATA</string>
+    <string name="r_txtLbl_Arti">ARTI</string>
+    <string name="r_txtLbl_Contoh">CONTOH</string>
+    <string name="r_txtLbl_Credit">CREDIT</string>
+    <string name="r_txtLbl_Link1">LINK1</string>
+    <string name="r_txtLbl_Link2">LINK2</string>
+
+    // Additional Resource for UsulkanKatM2I
+    <string name="r_txtLbl_Kontributor">KONTRIBUTOR</string>
+    <string name="r_txtHint_ContributorName">NAMA ANDA/KONTRIBUTOR</string>
+    <string name="r_txtBtn_KirimKata">KIRIM KATA BARU</string>
+    <string name="r_txt_KetUsulKata">Usulan Kata Baru dari anda akan dikirimkan lewat WhatsApp ke nomor yang disediakan khusus untuk menampung usulan tersebut. Pastikan bahwa : 1)Aplikasi WhatsApp terinstall di HP Anda. 2)Anda memiliki kuota data untuk mengirimkan pesan WhatsApp.</string>
+
+    // Additional Resource for TentangKamusM2I
+    <string name="r_txt_HdrTtgKamus">TENTANG KAMUS MANADO</string>
+    <string name="r_txt_TtgKamusPara1">Kamus Bahasa Manado ini merupakan Proyek Rintisan bersifat Koloborasi untuk melestarikan Bahasa Manado sebagai Bahasa Daerah yang umum dipakai di Wilayah Kota Manado dan Propinsi Sulawesi Utara.</string>
+    <string name="r_txt_TtgKamusPara2">Bahasa Manado merupakan Bahasa yang SANGAT DINAMIS. Selain ada KATA BAKU (contoh:"NGANA","TORANG",dll) yang relatif sering dipakai sehari-hari, ada juga KATA BARU (contoh:"HUGEL","KARLOTA",dll), yang muncul sesuai dengan perkembangan jaman. Ada juga KATA LAMA (contoh:"WAYER","VALINGGIR",dll) yang perlahan-lahan pudar pemakaiannya dan mulai dilupakan.</string>
+    <string name="r_txt_TtgKamusPara3">Dala proyek ini kami berusaha sebaik mungkin secara sistematis untuk mengumpulkan Kata-kata Bahasa Manado untuk dimasukkan dalam Applikasi ini. Namun, kami yakin banyak kekurangan dalam proses ini, sehingga ada kemungkinan Kata yang TERLEWAT (tidak dimasukkan). Untuk itu dalam Aplikasi ini kami menyediakan menu USULKAN KATA BARU (Menu Ke-2 dari Menu Utama) sebagai sarana bagi pemakai untuk mengusulkan KATA BARU untuk dimasukkan dalam Kamus Ini. Kata-kata yang diusulkan dan diterima akan kami masukkan dalam UPDATE Aplikasi ini berikutnya.</string>
+    <string name="r_txt_TtgKamusPara4">NAMA pengusul kata baru yang diterima, akan kami masukkan dalam menu KONTRIBUTOR Aplikasi ini (Menu Ke-2 dari Menu Utama).</string>
+    <string name="r_txt_TtgKamusPara5">Mari bersama-sama melestarikan Bahasa Manado sebagai kekayaan budaya kita dengan tetap menggunakannya dalam percakapan sehari-hari.</string>
+
+    // Additional Resource for KontributorM2I
+    <string name="r_txt_HdrKontributor">KONTRIBUTOR KAMUS MANADO</string>
+    <string name="r_txt_KontribPara1">Berikut ini adalah Daftar Kontributor yang telah turut menyumbangkan KATA Bahasa Manado, yang tidak ada dalam Aplikasi Awal. TERIMA KASIH atas bantuan anda semua.</string>
+
+    // Alphabet Array for Word List
+    <string-array name="HurufAlfabet">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+</resources>

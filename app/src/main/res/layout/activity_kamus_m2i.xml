@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.KamusM2I">
+
+    <!-- The
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+    is to Prevent SofKey when Activity Start-->
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="false"
+        android:scaleType="matrix"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_manado_1" />
+
+    <TextView
+        android:id="@+id/txtHeaderCariKata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/r_txtHeader_CariKata"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtKata2Cari"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:ems="0"
+        android:hint="@string/r_txtHint_InputKataCari"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeaderCariKata" />
+
+    <Button
+        android:id="@+id/btnCariKataPersis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/r_txtBtn_CariPersis"
+        app:layout_constraintEnd_toStartOf="@+id/btnCariKataAwalan"
+        app:layout_constraintStart_toStartOf="@+id/txtKata2Cari"
+        app:layout_constraintTop_toBottomOf="@+id/txtKata2Cari" />
+
+    <Button
+        android:id="@+id/btnCariKataAwalan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/r_txtBtn_CariAwalan"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCariKataPersis"
+        app:layout_constraintEnd_toStartOf="@+id/btnCariKataMirip"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCariKataPersis" />
+
+    <Button
+        android:id="@+id/btnCariKataMirip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/r_txtBtn_CariMirip"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCariKataPersis"
+        app:layout_constraintEnd_toEndOf="@+id/txtKata2Cari"
+        app:layout_constraintStart_toEndOf="@+id/btnCariKataAwalan" />
+
+    <Button
+        android:id="@+id/btnTampilkanSemua"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/r_txtBtn_TampilkanSemua"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/btnCariKataMirip"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/btnCariKataPersis"
+        app:layout_constraintTop_toBottomOf="@+id/btnCariByHuruf" />
+
+    <Spinner
+        android:id="@+id/spHuruf"
+        android:layout_width="46dp"
+        android:layout_height="36dp"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="#2196F3"
+        android:dropDownWidth="wrap_content"
+        android:entries="@array/HurufAlfabet"
+        android:gravity="start"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCariByHuruf"
+        app:layout_constraintStart_toStartOf="@+id/btnCariKataPersis"
+        app:layout_constraintTop_toTopOf="@+id/btnCariByHuruf" />
+
+    <Button
+        android:id="@+id/btnCariByHuruf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cari Berdasar Huruf Awal"
+        app:layout_constraintEnd_toEndOf="@+id/btnCariKataMirip"
+        app:layout_constraintStart_toEndOf="@+id/spHuruf"
+        app:layout_constraintTop_toBottomOf="@+id/btnCariKataPersis" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_ArtiKata"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnTampilkanSemua"
+        tools:listitem="@layout/rv_kamus_item" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/r_txtBtn_Kembali"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

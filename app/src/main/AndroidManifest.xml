@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.kamusbahasamanado">
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.TampilkanKontribM2I"></activity>
+        <activity android:name=".activity.KontributorM2I" />
+        <activity android:name=".activity.TentangKamusM2I" />
+        <activity android:name=".activity.UsulkanKataM2I" />
+        <activity android:name=".activity.TampilkanKataM2I" />
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.KamusM2I" />
+        <activity android:name=".activity.CRUDKamusM2I" />
+    </application>
+
+</manifest>
