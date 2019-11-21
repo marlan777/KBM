@@ -35,6 +35,10 @@ class CRUDKamusM2I : AppCompatActivity() {
                     txtLink1.setText    (hasilCari[0].Link1 )
                     txtLink2.setText    (hasilCari[0].Link2 )
 
+                    btnCreate.setEnabled(false)
+                    btnUpdate.setEnabled(true)
+                    btnDelete.setEnabled(true)
+
                     // Set Status to NEUTRAL ----------
                     crudStatus = ""
 
@@ -220,10 +224,10 @@ class CRUDKamusM2I : AppCompatActivity() {
         // Disabled Associated Buttons
         btnCari.setEnabled(true)
         btnCreate.setEnabled(true)
-        btnUpdate.setEnabled(true)
+        btnUpdate.setEnabled(false)
         btnSave.setEnabled(false)
         btnCancel.setEnabled(false)
-        btnDelete.setEnabled(true)
+        btnDelete.setEnabled(false)
         btnYES.setEnabled(false)
         btnNO.setEnabled(false)
         btnBack.setEnabled(true)
