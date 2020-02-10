@@ -3,7 +3,7 @@ package com.kamusbahasamanado.model
 // -----------------------------------------------------------------------------
 // Important Constants
 const val DATABASE_VERSION    : Int       = 1
-const val DATABASE_NAME       : String    = "Login"
+const val DATABASE_NAME       : String    = "Screen20200209"
 const val DATABASE_TABLE      : String    = "DataKata"
 const val KATA                : String    = "Kata"
 const val ARTI                : String    = "Arti"

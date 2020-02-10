@@ -44,11 +44,18 @@
     <string name="r_txtLbl_Link1">LINK1</string>
     <string name="r_txtLbl_Link2">LINK2</string>
 
-    // Additional Resource for UsulkanKatM2I
+    // Additional Resource for TampilkanKataM2I
+    <string name="r_txtBtn_Koreksi">KOREKSI KATA INI</string>
+
+    // Additional Resource for UsulkanKataM2I
+    <string name="r_txt_KetUsulKataBaru">Usulan Kata Baru dari anda akan dikirimkan lewat WhatsApp ke nomor yang disediakan khusus untuk menampung usulan tersebut. Pastikan bahwa : 1)Aplikasi WhatsApp terinstall di HP Anda. 2)Anda memiliki kuota data untuk mengirimkan pesan WhatsApp.</string>
     <string name="r_txtLbl_Kontributor">KONTRIBUTOR</string>
     <string name="r_txtHint_ContributorName">NAMA ANDA/KONTRIBUTOR</string>
-    <string name="r_txtBtn_KirimKata">KIRIM KATA BARU</string>
-    <string name="r_txt_KetUsulKata">Usulan Kata Baru dari anda akan dikirimkan lewat WhatsApp ke nomor yang disediakan khusus untuk menampung usulan tersebut. Pastikan bahwa : 1)Aplikasi WhatsApp terinstall di HP Anda. 2)Anda memiliki kuota data untuk mengirimkan pesan WhatsApp.</string>
+    <string name="r_txtBtn_UsulKataBaru">KIRIM USULAN KATA BARU</string>
+
+    // Additional Resource for KoreksiKataM2I
+    <string name="r_txt_KetKoreksiKata">Koreksi Kata dari anda akan dikirimkan lewat WhatsApp ke nomor yang disediakan khusus untuk menampung usulan tersebut. Pastikan bahwa : 1)Aplikasi WhatsApp terinstall di HP Anda. 2)Anda memiliki kuota data untuk mengirimkan pesan WhatsApp.</string>
+    <string name="r_txtBtn_KirimKoreksiKata">KIRIM KOREKSI KATA</string>
 
     // Additional Resource for TentangKamusM2I
     <string name="r_txt_HdrTtgKamus">TENTANG KAMUS MANADO</string>

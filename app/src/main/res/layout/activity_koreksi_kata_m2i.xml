@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.TampilkanKataM2I">
+    tools:context=".activity.KoreksiKataM2I">
 
     <ScrollView
         android:layout_width="0dp"
@@ -12,7 +12,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnKoreksi"
+        app:layout_constraintBottom_toTopOf="@id/btnKirimKoreksiKata"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -23,22 +23,37 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/txtHeaderKata"
-                android:layout_width="wrap_content"
+                android:id="@+id/txtKetKoreksiKata"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/r_txtLbl_Kata"
-                android:textSize="32sp"
+                android:layout_marginTop="8dp"
+                android:text="@string/r_txt_KetKoreksiKata"
+                android:textSize="12sp"
                 android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/txtHeaderKata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/r_txtHint_Kata"
+                android:text="@string/r_txtLbl_Kata"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtKetKoreksiKata" />
+
+            <EditText
                 android:id="@+id/txtKataIn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:ems="10"
+                android:hint="@string/r_txtHint_Kata"
                 android:textColor="@android:color/holo_blue_dark"
-                android:textSize="32sp"
+                android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtHeaderKata" />
@@ -47,20 +62,21 @@
                 android:id="@+id/txtHeaderArti"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/r_txtLbl_Arti"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtKataIn" />
 
-            <TextView
+            <EditText
                 android:id="@+id/txtArtiIn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:ems="10"
+                android:hint="@string/r_txtHint_Arti"
+                android:inputType="textMultiLine"
                 android:textColor="@android:color/black"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtHeaderArti" />
@@ -69,20 +85,21 @@
                 android:id="@+id/txtHeaderContoh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/r_txtLbl_Contoh"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtArtiIn" />
 
-            <TextView
+            <EditText
                 android:id="@+id/txtContohIn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:ems="10"
+                android:hint="@string/r_txtHint_Contoh"
+                android:inputType="textMultiLine"
                 android:textColor="@color/colorAccent"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtHeaderContoh" />
@@ -91,75 +108,35 @@
                 android:id="@+id/txtHeaderCredit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/r_txtLbl_Credit"
+                android:layout_marginTop="8dp"
+                android:text="@string/r_txtLbl_Kontributor"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtContohIn" />
 
-            <TextView
+            <EditText
                 android:id="@+id/txtCreditIn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:ems="10"
+                android:hint="@string/r_txtHint_ContributorName"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorAccent"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtHeaderCredit" />
 
-            <TextView
-                android:id="@+id/txtHeaderLink1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/r_txtLbl_Link1"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCreditIn" />
-
-            <TextView
-                android:id="@+id/txtLink1In"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtHeaderLink1" />
-
-            <TextView
-                android:id="@+id/txtHeaderLink2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/r_txtLbl_Link2"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtLink1In" />
-
-            <TextView
-                android:id="@+id/txtLink2In"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtHeaderLink2" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
     <Button
-        android:id="@+id/btnKoreksi"
+        android:id="@+id/btnKirimKoreksiKata"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/r_txtBtn_Koreksi"
+        android:text="@string/r_txtBtn_KirimKoreksiKata"
         app:layout_constraintBottom_toTopOf="@+id/btnBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
