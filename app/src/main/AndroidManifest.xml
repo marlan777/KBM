@@ -12,19 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.TampilkanKontribM2I"></activity>
-        <activity android:name=".activity.KontributorM2I" />
-        <activity android:name=".activity.TentangKamusM2I" />
-        <activity android:name=".activity.UsulkanKataM2I" />
-        <activity android:name=".activity.TampilkanKataM2I" />
-        <activity android:name=".activity.KoreksiKataM2I" />
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".activity.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".activity.TampilkanKontribM2I" />
+        <activity android:name=".activity.KontributorM2I" />
+        <activity android:name=".activity.TentangKamusM2I" />
+        <activity android:name=".activity.UsulkanKataM2I" />
+        <activity android:name=".activity.TampilkanKataM2I" />
+        <activity android:name=".activity.KoreksiKataM2I" />
+        <activity android:name=".activity.MainActivity"/>
         <activity android:name=".activity.KamusM2I" />
         <activity android:name=".activity.CRUDKamusM2I" />
     </application>
