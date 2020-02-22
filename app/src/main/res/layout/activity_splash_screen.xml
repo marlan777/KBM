@@ -10,10 +10,23 @@
     tools:context=".activity.SplashScreen">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgIklanApp"
+        android:layout_width="225dp"
+        android:layout_height="276dp"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogoApp"
+        app:srcCompat="@drawable/img_manado_2" />
+
+    <ImageView
+        android:id="@+id/imgLogoApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imgIklanApp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,15 +34,14 @@
         app:srcCompat="@drawable/img_kamusmanado_1" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtNamaApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="Kamus Bahasa Manado Ver 1.2"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imgLogoApp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

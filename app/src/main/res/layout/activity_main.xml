@@ -69,6 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/r_txtBtn_Keluar"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBackground"
         app:layout_constraintEnd_toEndOf="@+id/btnKamusM2I"
         app:layout_constraintStart_toStartOf="@+id/btnKamusM2I"
         app:layout_constraintTop_toBottomOf="@+id/btnKontributor" />
@@ -79,6 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="@string/r_txtBtn_CRUDKamusM2I"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btnKamusM2I"
         app:layout_constraintHorizontal_bias="0.0"
